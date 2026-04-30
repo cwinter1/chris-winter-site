@@ -846,6 +846,18 @@ section {
     font-weight: 600;
 }
 
+/* Side Projects Sub-header */
+.side-projects-header {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+}
+
 /* Impact Stats */
 .impact-grid {
     display: grid;

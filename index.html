@@ -64,80 +64,10 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Projects -->
         <section class="ai-leadership">
             <div class="section-number">02</div>
             <h2 class="section-title">Projects</h2>
-
-            <div class="ai-content-compact">
-                <p class="ai-intro-text">
-                    Production pipelines and tools built outside work hours — all running daily in live environments, automated via GitHub Actions and Windows Task Scheduler.
-                </p>
-
-                <div class="ai-highlights">
-                    <div class="highlight-item">
-                        <span class="highlight-icon">🔍</span>
-                        <div>
-                            <strong>Job Scraping Pipeline</strong> — Daily automation scraping 6 Israeli job boards, scoring matches, generating tailored CVs via an LLM failover chain (Gemini → Groq → Cerebras → Anthropic), and sending recruiter outreach. Built with Python, Selenium, PostgreSQL, and Claude API.
-                            <a href="https://github.com/cwinter1/job-scraping-pipeline" target="_blank" class="highlight-link">View on GitHub</a>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-icon">🏃</span>
-                        <div>
-                            <strong>Garmin Daily Brief</strong> — Pulls Garmin Connect health data each morning, uses Claude to analyze recovery and generate a personalized workout, pushes it to the watch, and sends a brief email. Runs on GitHub Actions cron at 09:00 Israel time.
-                            <a href="https://github.com/cwinter1/garmin-daily-brief-overview" target="_blank" class="highlight-link">View on GitHub</a>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-icon">📚</span>
-                        <div>
-                            <strong>Data Engineering Curriculum</strong> — Structured Python curriculum covering pipeline design, SQL, cloud storage, orchestration, and production patterns drawn from fintech and eCommerce environments.
-                            <a href="https://github.com/cwinter1/data-engineering-curriculum" target="_blank" class="highlight-link">View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- AI / Claude Section -->
-        <section class="ai-leadership" style="margin-top: 0;">
-            <div class="section-number">02b</div>
-            <h2 class="section-title">AI in Production</h2>
-
-            <div class="ai-content-compact">
-                <p class="ai-intro-text">
-                    <strong>"The best automation is the kind that runs while you sleep."</strong><br>
-                    Both production projects use Claude API for real decision-making — not demos, not experiments.
-                </p>
-
-                <div class="ai-highlights">
-                    <div class="highlight-item">
-                        <span class="highlight-icon">🧠</span>
-                        <div>
-                            <strong>Claude Code (CLI)</strong> — Used daily for software engineering tasks: writing pipeline code, debugging scrapers, reviewing PRs. Claude Code runs in the terminal against real codebases.
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-icon">📄</span>
-                        <div>
-                            <strong>CV Generation with ATS coverage</strong> — LLM failover chain generates tailored CVs per job. Each output is scored for keyword coverage; anything below 75% is rejected and regenerated automatically.
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-icon">💪</span>
-                        <div>
-                            <strong>Claude-generated workout plans</strong> — Daily HRV + sleep data fed to Claude; structured workout JSON returned, parsed, and pushed directly to Garmin watch over the API.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Work Projects -->
-        <section class="ai-leadership" style="margin-top: 0;">
-            <div class="section-number">03</div>
-            <h2 class="section-title">Work Projects</h2>
             <div class="projects-list">
 
                 <div class="project-card">
@@ -253,11 +183,36 @@
                 </div>
 
             </div>
+
+            <div class="side-projects-header">Side Projects</div>
+            <div class="ai-highlights">
+                <div class="highlight-item">
+                    <span class="highlight-icon">🔍</span>
+                    <div>
+                        <strong>Job Scraping Pipeline</strong> — Scrapes 6 Israeli job boards daily, scores matches, generates tailored CVs via an LLM failover chain (Gemini → Groq → Cerebras → Anthropic) with ATS coverage scoring — anything below 75% is rejected and regenerated. Sends recruiter outreach automatically. Built with Python, Selenium, PostgreSQL, Claude API.
+                        <a href="https://github.com/cwinter1/job-scraping-pipeline" target="_blank" class="highlight-link">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">🏃</span>
+                    <div>
+                        <strong>Garmin Daily Brief</strong> — Pulls Garmin Connect health data each morning, feeds HRV + sleep data to Claude, gets a structured workout JSON back, pushes it to the watch via API, and emails a brief. Runs on GitHub Actions cron at 09:00 Israel time.
+                        <a href="https://github.com/cwinter1/garmin-daily-brief-overview" target="_blank" class="highlight-link">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon">📚</span>
+                    <div>
+                        <strong>Data Engineering Curriculum</strong> — Structured Python curriculum covering pipeline design, SQL, cloud storage, orchestration, and production patterns drawn from fintech and eCommerce environments.
+                        <a href="https://github.com/cwinter1/data-engineering-curriculum" target="_blank" class="highlight-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Impact Stats -->
         <section class="ai-leadership" style="margin-top: 0;">
-            <div class="section-number">03b</div>
+            <div class="section-number">03</div>
             <h2 class="section-title">Impact</h2>
             <div class="impact-grid">
                 <div class="impact-stat">
