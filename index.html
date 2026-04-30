@@ -72,233 +72,173 @@
             <!-- Work Projects -->
             <div class="projects-list">
 
-                <div class="uni-card">
-                    <div class="uni-card-header">
-                        <div class="uni-card-icon">📊</div>
-                        <div class="uni-card-header-text">
-                            <div class="uni-card-title">Enterprise Revenue SSOT &amp; Semantic Layer</div>
-                            <div class="uni-card-desc">Single source of truth for all revenue KPIs across a banking platform — from fragmented calculations to a centralised semantic layer trusted company-wide.</div>
-                            <div class="uni-tech-tags">
-                                <span class="uni-tech-tag">PostgreSQL</span>
-                                <span class="uni-tech-tag">Control-M</span>
-                                <span class="uni-tech-tag">Tableau</span>
-                                <span class="uni-tech-tag">Python</span>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <h3>Enterprise Revenue SSOT &amp; Semantic Layer</h3>
+                    <p class="project-problem">Multiple teams calculated the same KPIs with different results. 6-hour pipeline runs. Stakeholders didn't trust the data.</p>
+                    <div class="project-built-label">ARCHITECTURE</div>
+                    <div class="arch-flow">
+                        <div class="arch-box">Source Tables<small>transactions · customers</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Control-M<small>orchestration</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Semantic Layer<small>single calc engine</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Dashboards<small>reliability + KPIs</small></div>
                     </div>
-                    <div class="uni-card-body">
-                        <div class="uni-section-label">Challenge</div>
-                        <div class="uni-challenge">Multiple teams calculated the same KPIs with different results. 6-hour pipeline runs. Stakeholders didn't trust the data.</div>
-                        <div class="uni-section-label">Architecture</div>
-                        <div class="arch-flow">
-                            <div class="arch-box">Source Tables<small>transactions · customers</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Control-M<small>orchestration</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Semantic Layer<small>single calc engine</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Dashboards<small>reliability + KPIs</small></div>
-                        </div>
-                        <div class="uni-section-label">Solution</div>
-                        <ul class="uni-solution">
+                    <div class="project-built">
+                        <div class="project-built-label">WHAT I BUILT</div>
+                        <ul>
                             <li>Centralised semantic layer with a single standardised calculation engine</li>
                             <li>Control-M job chain replacing fragmented, unreliable scheduling</li>
                             <li>Automated data validation and integrity checks at every pipeline stage</li>
                             <li>Executive dashboards exposing data reliability alongside business metrics</li>
                         </ul>
                     </div>
-                    <div class="uni-card-footer">
-                        <div class="uni-results">
-                            <span class="uni-result-badge">58% faster (6h → 2.5h)</span>
-                            <span class="uni-result-badge">100% KPI consistency</span>
-                            <span class="uni-result-badge">Company-wide SSOT</span>
-                            <span class="uni-result-badge">15% customer base in risk analytics</span>
-                        </div>
-                        <a href="https://github.com/cwinter1/project_1-Enterprise_Semantic_Layer" target="_blank" class="uni-github-btn">GitHub ↗</a>
+                    <div class="project-results">
+                        <span class="result-badge">58% faster (6h → 2.5h)</span>
+                        <span class="result-badge">100% KPI consistency</span>
+                        <span class="result-badge">Company-wide SSOT</span>
+                        <span class="result-badge">15% customer base in risk analytics</span>
                     </div>
+                    <div class="tech-tags" style="margin-top: 0.75rem;">
+                        <span>PostgreSQL</span><span>Control-M</span><span>Tableau</span><span>Python</span>
+                    </div>
+                    <a href="https://github.com/cwinter1/project_1-Enterprise_Semantic_Layer" target="_blank" class="project-github-link">View on GitHub ↗</a>
                 </div>
 
-                <div class="uni-card">
-                    <div class="uni-card-header">
-                        <div class="uni-card-icon">🗄️</div>
-                        <div class="uni-card-header-text">
-                            <div class="uni-card-title">Production-Ready PostgreSQL Development Environment</div>
-                            <div class="uni-card-desc">Full production-mirroring local environment — multi-schema, RBAC, stored procedures, materialized views, and automated validation in a Docker container.</div>
-                            <div class="uni-tech-tags">
-                                <span class="uni-tech-tag">Docker</span>
-                                <span class="uni-tech-tag">PostgreSQL</span>
-                                <span class="uni-tech-tag">Python</span>
-                                <span class="uni-tech-tag">Bash</span>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <h3>Production-Ready PostgreSQL Development Environment</h3>
+                    <p class="project-problem">No safe place to develop and test complex database logic without risking production data or systems.</p>
+                    <div class="project-built-label">ARCHITECTURE</div>
+                    <div class="arch-flow">
+                        <div class="arch-box">DDL Scripts<small>schemas · functions</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Docker Container<small>isolated env</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">PostgreSQL<small>multi-schema + RBAC</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">pytest Suite<small>FK · views · functions</small></div>
                     </div>
-                    <div class="uni-card-body">
-                        <div class="uni-section-label">Challenge</div>
-                        <div class="uni-challenge">No safe place to develop and test complex database logic without risking production data or systems.</div>
-                        <div class="uni-section-label">Architecture</div>
-                        <div class="arch-flow">
-                            <div class="arch-box">DDL Scripts<small>schemas · functions</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Docker Container<small>isolated env</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">PostgreSQL<small>multi-schema + RBAC</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">pytest Suite<small>FK · views · functions</small></div>
-                        </div>
-                        <div class="uni-section-label">Solution</div>
-                        <ul class="uni-solution">
+                    <div class="project-built">
+                        <div class="project-built-label">WHAT I BUILT</div>
+                        <ul>
                             <li>Multi-schema Docker environment matching production architecture exactly</li>
                             <li>Custom functions, stored procedures, and materialized views with CONCURRENTLY refresh</li>
                             <li>Role-based access control matching production security tiers</li>
                             <li>Automated FK integrity and view completeness tests via pytest</li>
                         </ul>
                     </div>
-                    <div class="uni-card-footer">
-                        <div class="uni-results">
-                            <span class="uni-result-badge">Zero production risk</span>
-                            <span class="uni-result-badge">2-min setup from scratch</span>
-                            <span class="uni-result-badge">Automated FK + view validation</span>
-                        </div>
-                        <a href="https://github.com/cwinter1/project_2-postgresql-dev-environment" target="_blank" class="uni-github-btn">GitHub ↗</a>
+                    <div class="project-results">
+                        <span class="result-badge">Zero production risk</span>
+                        <span class="result-badge">2-min setup from scratch</span>
+                        <span class="result-badge">Automated FK + view validation</span>
                     </div>
+                    <div class="tech-tags" style="margin-top: 0.75rem;">
+                        <span>Docker</span><span>PostgreSQL</span><span>Python</span><span>Bash</span>
+                    </div>
+                    <a href="https://github.com/cwinter1/project_2-postgresql-dev-environment" target="_blank" class="project-github-link">View on GitHub ↗</a>
                 </div>
 
-                <div class="uni-card">
-                    <div class="uni-card-header">
-                        <div class="uni-card-icon">☁️</div>
-                        <div class="uni-card-header-text">
-                            <div class="uni-card-title">Multi-Source Cloud Analytics Platform</div>
-                            <div class="uni-card-desc">Unified analytics layer merging on-prem PostgreSQL with external cloud datasets via AWS Glue, Athena, and BigQuery — 40% cheaper than the prior infrastructure.</div>
-                            <div class="uni-tech-tags">
-                                <span class="uni-tech-tag">AWS S3</span>
-                                <span class="uni-tech-tag">Glue</span>
-                                <span class="uni-tech-tag">Athena</span>
-                                <span class="uni-tech-tag">BigQuery</span>
-                                <span class="uni-tech-tag">Python</span>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <h3>Multi-Source Cloud Analytics Platform</h3>
+                    <p class="project-problem">On-prem user behaviour data was siloed from external cloud datasets. No infrastructure to combine them efficiently — cross-source reports took hours manually.</p>
+                    <div class="project-built-label">ARCHITECTURE</div>
+                    <div class="arch-flow">
+                        <div class="arch-box">PostgreSQL + S3<small>on-prem + external</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">AWS Glue ETL<small>transform + catalog</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Athena<small>Parquet / serverless</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">BigQuery<small>unified analytics</small></div>
                     </div>
-                    <div class="uni-card-body">
-                        <div class="uni-section-label">Challenge</div>
-                        <div class="uni-challenge">On-prem user behaviour data was siloed from external cloud datasets. No infrastructure to combine them efficiently — cross-source reports took hours manually.</div>
-                        <div class="uni-section-label">Architecture</div>
-                        <div class="arch-flow">
-                            <div class="arch-box">PostgreSQL + S3<small>on-prem + external</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">AWS Glue ETL<small>transform + catalog</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Athena<small>Parquet / serverless</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">BigQuery<small>unified analytics</small></div>
-                        </div>
-                        <div class="uni-section-label">Solution</div>
-                        <ul class="uni-solution">
+                    <div class="project-built">
+                        <div class="project-built-label">WHAT I BUILT</div>
+                        <ul>
                             <li>AWS Glue ETL jobs for automated extraction and transformation from multiple sources</li>
                             <li>Glue Data Catalog connecting PostgreSQL, S3, and Athena into a unified metadata layer</li>
                             <li>Partitioned Parquet storage reducing Athena scan costs by 60%+ vs CSV</li>
                             <li>BigQuery integration for cross-cloud analytics and unified reporting</li>
                         </ul>
                     </div>
-                    <div class="uni-card-footer">
-                        <div class="uni-results">
-                            <span class="uni-result-badge">40% infra cost reduction</span>
-                            <span class="uni-result-badge">5+ sources consolidated</span>
-                            <span class="uni-result-badge">92% faster queries (2-5 min → 5-15 sec)</span>
-                            <span class="uni-result-badge">Same-day insights</span>
-                        </div>
-                        <a href="https://github.com/cwinter1/project_3-multi-source-cloud-platform" target="_blank" class="uni-github-btn">GitHub ↗</a>
+                    <div class="project-results">
+                        <span class="result-badge">40% infra cost reduction</span>
+                        <span class="result-badge">5+ sources consolidated</span>
+                        <span class="result-badge">92% faster queries (2-5 min → 5-15 sec)</span>
+                        <span class="result-badge">Same-day insights</span>
                     </div>
+                    <div class="tech-tags" style="margin-top: 0.75rem;">
+                        <span>AWS S3</span><span>Glue</span><span>Athena</span><span>BigQuery</span><span>Python</span>
+                    </div>
+                    <a href="https://github.com/cwinter1/project_3-multi-source-cloud-platform" target="_blank" class="project-github-link">View on GitHub ↗</a>
                 </div>
 
-                <div class="uni-card">
-                    <div class="uni-card-header">
-                        <div class="uni-card-icon">⚡</div>
-                        <div class="uni-card-header-text">
-                            <div class="uni-card-title">Materialized Views with Control-M Scheduling</div>
-                            <div class="uni-card-desc">Moved heavy aggregation off business hours entirely — 10-minute report queries dropped to sub-second, with zero production load during the day.</div>
-                            <div class="uni-tech-tags">
-                                <span class="uni-tech-tag">PostgreSQL</span>
-                                <span class="uni-tech-tag">Control-M</span>
-                                <span class="uni-tech-tag">SQL</span>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <h3>Materialized Views with Control-M Scheduling</h3>
+                    <p class="project-problem">Report queries joining multiple large tables ran 10+ minutes during business hours, contending with production workloads and causing unpredictable delays.</p>
+                    <div class="project-built-label">ARCHITECTURE</div>
+                    <div class="arch-flow">
+                        <div class="arch-box">Source Tables<small>transactions · risk</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Materialized View<small>pre-aggregated KPIs</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Control-M<small>18:30 job chain</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">BI Dashboards<small>sub-second queries</small></div>
                     </div>
-                    <div class="uni-card-body">
-                        <div class="uni-section-label">Challenge</div>
-                        <div class="uni-challenge">Report queries joining multiple large tables ran 10+ minutes during business hours, contending with production workloads and causing unpredictable delays.</div>
-                        <div class="uni-section-label">Architecture</div>
-                        <div class="arch-flow">
-                            <div class="arch-box">Source Tables<small>transactions · risk</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Materialized View<small>pre-aggregated KPIs</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Control-M<small>18:30 job chain</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">BI Dashboards<small>sub-second queries</small></div>
-                        </div>
-                        <div class="uni-section-label">Solution</div>
-                        <ul class="uni-solution">
+                    <div class="project-built">
+                        <div class="project-built-label">WHAT I BUILT</div>
+                        <ul>
                             <li>Optimised materialized view pre-aggregating all KPIs at refresh time — not query time</li>
                             <li>Composite indexes built around actual dashboard filter patterns, not schema normalization</li>
                             <li>CONCURRENTLY refresh (requires unique index) keeping dashboards live during the refresh window</li>
                             <li>Control-M job chain gating refresh on upstream pipeline completion with SLA alerting</li>
                         </ul>
                     </div>
-                    <div class="uni-card-footer">
-                        <div class="uni-results">
-                            <span class="uni-result-badge">&gt;95% query time reduction</span>
-                            <span class="uni-result-badge">10 min → sub-second</span>
-                            <span class="uni-result-badge">Zero daytime prod load</span>
-                            <span class="uni-result-badge">99.5% refresh reliability</span>
-                        </div>
-                        <a href="https://github.com/cwinter1/project_4-materialized-views-scheduling" target="_blank" class="uni-github-btn">GitHub ↗</a>
+                    <div class="project-results">
+                        <span class="result-badge">&gt;95% query time reduction</span>
+                        <span class="result-badge">10 min → sub-second</span>
+                        <span class="result-badge">Zero daytime prod load</span>
+                        <span class="result-badge">99.5% refresh reliability</span>
                     </div>
+                    <div class="tech-tags" style="margin-top: 0.75rem;">
+                        <span>PostgreSQL</span><span>Control-M</span><span>SQL</span>
+                    </div>
+                    <a href="https://github.com/cwinter1/project_4-materialized-views-scheduling" target="_blank" class="project-github-link">View on GitHub ↗</a>
                 </div>
 
-                <div class="uni-card">
-                    <div class="uni-card-header">
-                        <div class="uni-card-icon">📈</div>
-                        <div class="uni-card-header-text">
-                            <div class="uni-card-title">Product Funnel Analytics &amp; User Journey Optimization</div>
-                            <div class="uni-card-desc">Dual-dashboard system for a neobank — distinguishing UX failures from technical errors, with anomaly alerts catching drops within 5 minutes instead of 2 hours.</div>
-                            <div class="uni-tech-tags">
-                                <span class="uni-tech-tag">BigQuery</span>
-                                <span class="uni-tech-tag">SQL</span>
-                                <span class="uni-tech-tag">Looker</span>
-                                <span class="uni-tech-tag">Python</span>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <h3>Product Funnel Analytics &amp; User Journey Optimization</h3>
+                    <p class="project-problem">High drop-off rates with no visibility into where users failed or why — UX issues and technical errors were indistinguishable, and problems were found hours after the fact.</p>
+                    <div class="project-built-label">ARCHITECTURE</div>
+                    <div class="arch-flow">
+                        <div class="arch-box">Web / Mobile Events<small>page views · clicks</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">BigQuery<small>funnel pipeline</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Happy + Error Flow<small>dual dashboards</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Looker + Alerts<small>self-service</small></div>
                     </div>
-                    <div class="uni-card-body">
-                        <div class="uni-section-label">Challenge</div>
-                        <div class="uni-challenge">High drop-off rates with no visibility into where users failed or why — UX issues and technical errors were indistinguishable, and problems were found hours after the fact.</div>
-                        <div class="uni-section-label">Architecture</div>
-                        <div class="arch-flow">
-                            <div class="arch-box">Web / Mobile Events<small>page views · clicks</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">BigQuery<small>funnel pipeline</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Happy + Error Flow<small>dual dashboards</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Looker + Alerts<small>self-service</small></div>
-                        </div>
-                        <div class="uni-section-label">Solution</div>
-                        <ul class="uni-solution">
+                    <div class="project-built">
+                        <div class="project-built-label">WHAT I BUILT</div>
+                        <ul>
                             <li>BigQuery event processing pipeline with per-funnel-step tracking across web and mobile</li>
                             <li>Dual dashboards: happy flow (completions + engagement) vs error flow (failures + abandonment)</li>
                             <li>Cohort analysis framework for measuring product change impact over time</li>
                             <li>Automated anomaly alerting — conversion drops detected within 5 minutes, not 2 hours</li>
                         </ul>
                     </div>
-                    <div class="uni-card-footer">
-                        <div class="uni-results">
-                            <span class="uni-result-badge">+23% signup conversion</span>
-                            <span class="uni-result-badge">2h → 5 min incident detection</span>
-                            <span class="uni-result-badge">15% fewer support tickets</span>
-                            <span class="uni-result-badge">60% fewer analyst requests</span>
-                        </div>
-                        <a href="https://github.com/cwinter1/project_5-product-funnel-analytics" target="_blank" class="uni-github-btn">GitHub ↗</a>
+                    <div class="project-results">
+                        <span class="result-badge">+23% signup conversion</span>
+                        <span class="result-badge">2h → 5 min incident detection</span>
+                        <span class="result-badge">15% fewer support tickets</span>
+                        <span class="result-badge">60% fewer analyst requests</span>
                     </div>
+                    <div class="tech-tags" style="margin-top: 0.75rem;">
+                        <span>BigQuery</span><span>SQL</span><span>Looker</span><span>Python</span>
+                    </div>
+                    <a href="https://github.com/cwinter1/project_5-product-funnel-analytics" target="_blank" class="project-github-link">View on GitHub ↗</a>
                 </div>
 
             </div>
@@ -307,142 +247,103 @@
             <div class="side-projects-header">Side Projects</div>
             <div class="projects-list">
 
-                <div class="uni-card">
-                    <div class="uni-card-header">
-                        <div class="uni-card-icon">🤖</div>
-                        <div class="uni-card-header-text">
-                            <div class="uni-card-title">Job Scraping Pipeline</div>
-                            <div class="uni-card-desc">Daily pipeline scraping 6 Israeli job boards, scoring matches by weighted skills + title + location, generating tailored CVs via LLM failover chain, and sending recruiter outreach automatically.</div>
-                            <div class="uni-tech-tags">
-                                <span class="uni-tech-tag">Python</span>
-                                <span class="uni-tech-tag">Selenium</span>
-                                <span class="uni-tech-tag">PostgreSQL</span>
-                                <span class="uni-tech-tag">Claude API</span>
-                                <span class="uni-tech-tag">Gemini</span>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <h3>Job Scraping Pipeline</h3>
+                    <p class="project-problem">Manual job search across 6 platforms daily, with no way to generate ATS-optimised CVs at scale or track which applications were sent.</p>
+                    <div class="project-built-label">ARCHITECTURE</div>
+                    <div class="arch-flow">
+                        <div class="arch-box">6 Job Boards<small>LinkedIn · Indeed · 4 more</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Selenium Scrapers<small>score + dedup</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">LLM Chain<small>Gemini → Groq → Claude</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Email + Outreach<small>Resend · auto-dedup</small></div>
                     </div>
-                    <div class="uni-card-body">
-                        <div class="uni-section-label">Challenge</div>
-                        <div class="uni-challenge">Manual job search across 6 platforms daily, with no way to generate ATS-optimised CVs at scale or track which applications were sent.</div>
-                        <div class="uni-section-label">Architecture</div>
-                        <div class="arch-flow">
-                            <div class="arch-box">6 Job Boards<small>LinkedIn · Indeed · 4 more</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Selenium Scrapers<small>score + dedup</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">LLM Chain<small>Gemini → Groq → Claude</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Email + Outreach<small>Resend · auto-dedup</small></div>
-                        </div>
-                        <div class="uni-section-label">Solution</div>
-                        <ul class="uni-solution">
+                    <div class="project-built">
+                        <div class="project-built-label">WHAT I BUILT</div>
+                        <ul>
                             <li>Selenium scrapers for LinkedIn, Indeed, AllJobs, Drushim, Wellfound, and Glassdoor</li>
                             <li>Weighted scoring: skills 40%, title 20%, experience 20%, location 10%</li>
                             <li>LLM failover chain (Gemini → Groq → Cerebras → Anthropic) with 75% ATS threshold — below 75% is rejected and regenerated</li>
                             <li>Automated recruiter email discovery (Hunter.io → Snov.io → Apollo.io) with outreach dedup</li>
                         </ul>
                     </div>
-                    <div class="uni-card-footer">
-                        <div class="uni-results">
-                            <span class="uni-result-badge">6 boards scraped daily</span>
-                            <span class="uni-result-badge">ATS-gated CV generation</span>
-                            <span class="uni-result-badge">Fully automated outreach</span>
-                        </div>
-                        <a href="https://github.com/cwinter1/job-scraping-pipeline" target="_blank" class="uni-github-btn">GitHub ↗</a>
+                    <div class="project-results">
+                        <span class="result-badge">6 boards scraped daily</span>
+                        <span class="result-badge">ATS-gated CV generation</span>
+                        <span class="result-badge">Fully automated outreach</span>
                     </div>
+                    <div class="tech-tags" style="margin-top: 0.75rem;">
+                        <span>Python</span><span>Selenium</span><span>PostgreSQL</span><span>Claude API</span><span>Gemini</span>
+                    </div>
+                    <a href="https://github.com/cwinter1/job-scraping-pipeline" target="_blank" class="project-github-link">View on GitHub ↗</a>
                 </div>
 
-                <div class="uni-card">
-                    <div class="uni-card-header">
-                        <div class="uni-card-icon">🏃</div>
-                        <div class="uni-card-header-text">
-                            <div class="uni-card-title">Garmin Daily Brief</div>
-                            <div class="uni-card-desc">Daily health automation: Garmin HRV + sleep data flows into Claude, which returns a structured workout JSON pushed directly to the watch — plus an email brief. Runs on GitHub Actions at 09:00 Israel time.</div>
-                            <div class="uni-tech-tags">
-                                <span class="uni-tech-tag">Python</span>
-                                <span class="uni-tech-tag">Claude API</span>
-                                <span class="uni-tech-tag">GitHub Actions</span>
-                                <span class="uni-tech-tag">SQLite</span>
-                                <span class="uni-tech-tag">Resend</span>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <h3>Garmin Daily Brief</h3>
+                    <p class="project-problem">No way to get personalised daily workout recommendations based on actual recovery data from the watch — generic plans ignore HRV and sleep quality.</p>
+                    <div class="project-built-label">ARCHITECTURE</div>
+                    <div class="arch-flow">
+                        <div class="arch-box">Garmin Connect<small>HRV · sleep · load</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Claude API<small>claude-sonnet-4-6</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">SQLite History<small>training context</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Watch + Email<small>JSON push · Resend</small></div>
                     </div>
-                    <div class="uni-card-body">
-                        <div class="uni-section-label">Challenge</div>
-                        <div class="uni-challenge">No way to get personalised daily workout recommendations based on actual recovery data from the watch — generic plans ignore HRV and sleep quality.</div>
-                        <div class="uni-section-label">Architecture</div>
-                        <div class="arch-flow">
-                            <div class="arch-box">Garmin Connect<small>HRV · sleep · load</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Claude API<small>claude-sonnet-4-6</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">SQLite History<small>training context</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Watch + Email<small>JSON push · Resend</small></div>
-                        </div>
-                        <div class="uni-section-label">Solution</div>
-                        <ul class="uni-solution">
+                    <div class="project-built">
+                        <div class="project-built-label">WHAT I BUILT</div>
+                        <ul>
                             <li>garth library for Garmin Connect API authentication and data extraction</li>
                             <li>Claude interprets HRV, sleep score, and training load to set workout intensity</li>
                             <li>Structured workout JSON pushed directly to the Garmin watch via API</li>
                             <li>SQLite stores training history for longitudinal context in each prompt</li>
                         </ul>
                     </div>
-                    <div class="uni-card-footer">
-                        <div class="uni-results">
-                            <span class="uni-result-badge">Runs daily on GitHub Actions</span>
-                            <span class="uni-result-badge">Recovery-based adaptation</span>
-                            <span class="uni-result-badge">Zero manual input</span>
-                        </div>
-                        <a href="https://github.com/cwinter1/garmin-daily-brief-overview" target="_blank" class="uni-github-btn">GitHub ↗</a>
+                    <div class="project-results">
+                        <span class="result-badge">Runs daily on GitHub Actions</span>
+                        <span class="result-badge">Recovery-based adaptation</span>
+                        <span class="result-badge">Zero manual input</span>
                     </div>
+                    <div class="tech-tags" style="margin-top: 0.75rem;">
+                        <span>Python</span><span>Claude API</span><span>GitHub Actions</span><span>SQLite</span><span>Resend</span>
+                    </div>
+                    <a href="https://github.com/cwinter1/garmin-daily-brief-overview" target="_blank" class="project-github-link">View on GitHub ↗</a>
                 </div>
 
-                <div class="uni-card">
-                    <div class="uni-card-header">
-                        <div class="uni-card-icon">📚</div>
-                        <div class="uni-card-header-text">
-                            <div class="uni-card-title">Data Engineering Curriculum</div>
-                            <div class="uni-card-desc">Structured Python curriculum covering pipeline design, SQL, cloud storage, and orchestration — built from real patterns used in fintech and eCommerce production environments.</div>
-                            <div class="uni-tech-tags">
-                                <span class="uni-tech-tag">Python</span>
-                                <span class="uni-tech-tag">SQL</span>
-                                <span class="uni-tech-tag">AWS</span>
-                                <span class="uni-tech-tag">Airflow</span>
-                                <span class="uni-tech-tag">Docker</span>
-                            </div>
-                        </div>
+                <div class="project-card">
+                    <h3>Data Engineering Curriculum</h3>
+                    <p class="project-problem">No curriculum connecting Python fundamentals to the production data engineering patterns actually used in banking and eCommerce — most courses stop at toy examples.</p>
+                    <div class="project-built-label">ARCHITECTURE</div>
+                    <div class="arch-flow">
+                        <div class="arch-box">Python Basics<small>types · functions</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">SQL &amp; Modeling<small>windows · indexes</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Cloud Storage<small>S3 · BigQuery</small></div>
+                        <span class="arch-arrow">→</span>
+                        <div class="arch-box">Orchestration<small>Airflow · Docker</small></div>
                     </div>
-                    <div class="uni-card-body">
-                        <div class="uni-section-label">Challenge</div>
-                        <div class="uni-challenge">No curriculum connecting Python fundamentals to the production data engineering patterns actually used in banking and eCommerce — most courses stop at toy examples.</div>
-                        <div class="uni-section-label">Architecture</div>
-                        <div class="arch-flow">
-                            <div class="arch-box">Python Basics<small>types · functions</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">SQL &amp; Modeling<small>windows · indexes</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Cloud Storage<small>S3 · BigQuery</small></div>
-                            <span class="arch-arrow">→</span>
-                            <div class="arch-box">Orchestration<small>Airflow · Docker</small></div>
-                        </div>
-                        <div class="uni-section-label">Solution</div>
-                        <ul class="uni-solution">
+                    <div class="project-built">
+                        <div class="project-built-label">WHAT I BUILT</div>
+                        <ul>
                             <li>Module-based progression from fundamentals to production pipeline patterns</li>
                             <li>Real-world scenarios drawn from fintech and eCommerce environments</li>
                             <li>Covers AWS, BigQuery, Airflow, Docker, and common orchestration patterns</li>
                             <li>Code exercises at each stage with worked solutions</li>
                         </ul>
                     </div>
-                    <div class="uni-card-footer">
-                        <div class="uni-results">
-                            <span class="uni-result-badge">Structured learning path</span>
-                            <span class="uni-result-badge">Production-ready patterns</span>
-                            <span class="uni-result-badge">Hands-on exercises</span>
-                        </div>
-                        <a href="https://github.com/cwinter1/data-engineering-curriculum" target="_blank" class="uni-github-btn">GitHub ↗</a>
+                    <div class="project-results">
+                        <span class="result-badge">Structured learning path</span>
+                        <span class="result-badge">Production-ready patterns</span>
+                        <span class="result-badge">Hands-on exercises</span>
                     </div>
+                    <div class="tech-tags" style="margin-top: 0.75rem;">
+                        <span>Python</span><span>SQL</span><span>AWS</span><span>Airflow</span><span>Docker</span>
+                    </div>
+                    <a href="https://github.com/cwinter1/data-engineering-curriculum" target="_blank" class="project-github-link">View on GitHub ↗</a>
                 </div>
 
             </div>
