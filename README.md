@@ -1,8 +1,8 @@
-# Itay Shmool - Personal Website
+# Chris Winter - Personal Website
 
-A mobile-first, single-page resume website showcasing Itay Shmool's 20+ year career in tech leadership at Wix.
+A mobile-first, single-page resume website showcasing Chris Winter's 7+ year career as a Senior Data Engineer in Israeli fintech and eCommerce.
 
-🌐 **Live Site**: [https://itayshmool.github.io/itay-shmool-site/](https://itayshmool.github.io/itay-shmool-site/)
+🌐 **Live Site**: [https://cwinter1.github.io/chris-winter-site/](https://cwinter1.github.io/chris-winter-site/)
 
 ## Design Concept
 
@@ -20,7 +20,6 @@ A mobile-first, single-page resume website showcasing Itay Shmool's 20+ year car
 - 🎯 Interactive micro-interactions
 - 🖨️ Print-friendly styles
 - ♿ Accessible design
-- 🎮 Easter egg (Konami code)
 
 ## Tech Stack
 
@@ -32,12 +31,12 @@ A mobile-first, single-page resume website showcasing Itay Shmool's 20+ year car
 ## Sections
 
 1. **Hero** - Bold introduction with animated title
-2. **About** - Personal philosophy and values
-3. **AI Leadership** - Recent AI projects, products, and leadership insights
-4. **Career** - Interactive timeline of professional journey
-5. **Expertise** - Skills categorized by domain
-6. **Mentorship** - Free mentorship offerings
-7. **Connect** - Social links (LinkedIn, GitHub, Website)
+2. **About** - Background and engineering focus
+3. **Projects** - Featured data engineering projects with architecture breakdowns
+4. **Impact** - Measurable results across engagements
+5. **Career** - Interactive timeline of professional journey
+6. **Expertise** - Skills categorized by domain
+7. **Connect** - Social links (LinkedIn, GitHub)
 
 ## Local Development
 
@@ -45,16 +44,13 @@ Simply open `index.html` in your browser. No build process required.
 
 ## Deployment
 
-✅ **Deployed to GitHub Pages**: [https://itayshmool.github.io/itay-shmool-site/](https://itayshmool.github.io/itay-shmool-site/)
-
-The site is automatically built and deployed from the `main` branch.
+Deployed to GitHub Pages from the `main` branch.
 
 ## Performance
 
 - Minimal dependencies (Google Fonts only)
 - No JavaScript frameworks
 - Optimized animations with `prefers-reduced-motion` support
-- Lazy-loaded sections with Intersection Observer
 
 ## Browser Support
 
@@ -65,14 +61,7 @@ The site is automatically built and deployed from the `main` branch.
 
 ## Credits
 
-Designed and developed with care in 2026.
-
-Information sourced from:
-- [LinkedIn Profile](https://www.linkedin.com/in/itayshmool/)
-- [GitHub Profile](https://github.com/itayshmool)
-- [Personal Website](https://www.itayshmool.net/)
-- [Wix Automation Presentation](https://www.slideshare.net/itayshmool/wix-automation)
-- [Selenium TLV Meetup](https://applitools.com/blog/selenium-meetup-3/)
+Design concept adapted from [Itay Shmool's personal site](https://www.itayshmool.net/) ([source](https://github.com/itayshmool/itay-shmool-site)).
 
 ---
 
